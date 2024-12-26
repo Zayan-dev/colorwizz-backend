@@ -22,6 +22,9 @@ connectDB();
 
 //user Routes
 app.use("/api", userRoutes);
+app.get("/check-me", ()=>{
+    res.json({message:"Aagya bhai"});
+});
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
