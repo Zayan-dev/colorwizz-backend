@@ -22,7 +22,7 @@ connectDB();
 
 //user Routes
 app.use("/api", userRoutes);
-app.get("/check-me", ()=>{
+app.get("/check-me", (req,res)=>{
     res.json({message:"Aagya bhai"});
 });
 
