@@ -8,7 +8,7 @@ import userRoutes from "./routes/userRoutes.js";
 dotenv.config();
 const app = express()
 
-const whiteList = ["http://localhost:5173", "https://colorwizz.net/"];
+const whiteList = ["http://localhost:5173", "https://colorwizz.net"];
 const corsOptions = {
     credentials: true,
     origin: whiteList,
